@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | DesignSphere</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS -->
+
+</head>
+<body style="background-color:#9f8768;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">DesignSphere</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="container mt-4 text-center">
+        <h1>Transform Your Space with Timeless Design</h1>
+    </header>
+
+    <!-- Bootstrap Carousel -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- Carousel Images -->
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+                <img src="interior1.jpg" class="d-block w-100" style="max-height: 800px; object-fit: cover;" alt="Modern Interior">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="interior2.jpg" class="d-block w-100" style="max-height: 800px; object-fit: cover;" alt="Luxury Living Room">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="interior3.jpg" class="d-block w-100" style="max-height: 800px; object-fit: cover;" alt="Elegant Bedroom">
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- Services Section -->
+    <div class="container mt-5">
+        <h2 class="text-center">Our Expertise</h2>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <h5 class="card-title">Residential Interiors</h5>
+                    <p class="card-text">Custom home interiors that reflect your style.Transform your home with elegant, functional, and personalized interiors. 
+                        Whether it's a modern apartment or a classic villa, we design spaces 
+                        that reflect your personality and enhance comfort.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <h5 class="card-title">Commercial Spaces</h5>
+                    <p class="card-text">Elegant office and retail space designs.Create inspiring work environments and stylish retail spaces that leave a lasting impression. Our designs blend functionality with aesthetics, ensuring your office fosters productivity and your retail space enhances customer experience.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <h5 class="card-title">Luxury Design</h5>
+                    <p class="card-text">High-end design solutions for premium spaces.Experience elegance with our luxury design solutions, crafted for high-end residences, hotels, and premium commercial spaces. We blend style, innovation, and exclusivity to create breathtaking interiors that exude opulence and refinement.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="container mt-5">
+        <h2 class="text-center">Get in Touch</h2>
+        <p class="text-center">Let's bring your dream space to life! Contact us today.</p>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Tell us about your project..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
